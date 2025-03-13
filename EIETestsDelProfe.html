@@ -1,0 +1,686 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>EIE PREGUNTAS  TESTS DEL PROFE</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+	margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI Variable Display", "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-default_background {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray_background {
+	background: rgba(248, 248, 247, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(248, 243, 252, 1);
+}
+.highlight-pink_background {
+	background: rgba(252, 241, 246, 1);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-default_background {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray_background {
+	background: rgba(248, 248, 247, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(248, 243, 252, 1);
+}
+.block-color-pink_background {
+	background: rgba(252, 241, 246, 1);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: undefined; }
+.select-value-color-pink { background-color: rgba(225, 136, 179, 0.27); }
+.select-value-color-purple { background-color: rgba(168, 129, 197, 0.27); }
+.select-value-color-green { background-color: rgba(123, 183, 129, 0.27); }
+.select-value-color-gray { background-color: rgba(84, 72, 49, 0.15); }
+.select-value-color-transparentGray { background-color: undefined; }
+.select-value-color-translucentGray { background-color: undefined; }
+.select-value-color-orange { background-color: rgba(224, 124, 57, 0.27); }
+.select-value-color-brown { background-color: rgba(210, 162, 141, 0.35); }
+.select-value-color-red { background-color: rgba(244, 171, 159, 0.4); }
+.select-value-color-yellow { background-color: rgba(236, 191, 66, 0.39); }
+.select-value-color-blue { background-color: rgba(93, 165, 206, 0.27); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="1b4c1017-243e-8062-a0a9-cdf4bdaa8acf" class="page serif"><header><h1 class="page-title">EIE PREGUNTAS  TESTS DEL PROFE</h1><p class="page-description"></p></header><div class="page-body"><hr id="1b5c1017-243e-807c-a7f5-d24842f5d63c"/><h1 id="1b5c1017-243e-80fa-a340-f4013947fc02" class=""><mark class="highlight-red">TEMA 1 EL EMPRESARIO Y EL PLAN DE EMPRESA</mark></h1><ol type="1" id="1b5c1017-243e-8034-8c66-dbe4b83879fe" class="numbered-list" start="1"><li><strong>¿Qué cualidad NO define a un emprendedor?<br/><br/></strong>a) Resolutivo<br/><br/><mark class="highlight-teal"><strong>b) Desorganizado</strong></mark><mark class="highlight-teal"><br/><br/></mark>c) Observador<br/>d) Automotivado<br/>e) Tolerante a la frustración<br/></li></ol><ol type="1" id="1b5c1017-243e-8059-9a7d-f77b6031d922" class="numbered-list" start="2"><li><strong>¿Quién es un intraemprendedor?<br/><br/></strong>a) Un empresario que crea su propio negocio<br/><br/><mark class="highlight-teal"><strong>b) Un empleado con alta capacidad creativa y tenacidad<br/><br/></strong></mark>c) Una persona que trabaja por cuenta propia<br/>d) Un empresario que sigue métodos tradicionales<br/>e) Un empleado que evita la innovación<br/></li></ol><ol type="1" id="1b5c1017-243e-8031-b23a-cc44672bc460" class="numbered-list" start="3"><li><strong>¿Cuál de las siguientes es una forma de generar una idea de negocio?<br/><br/></strong>a) Copiar un negocio existente<br/><br/><mark class="highlight-teal"><strong>b) Mejorar un producto existente<br/><br/></strong></mark>c) Evitar tomar riesgos<br/>d) Aceptar únicamente ideas convencionales<br/>e) Ignorar necesidades insatisfechas<br/></li></ol><ol type="1" id="1b5c1017-243e-80dc-a6b6-e2fba9f1a222" class="numbered-list" start="4"><li><strong>¿Qué es un plan de empresa?<br/><br/></strong>a) Un documento que detalla los recursos humanos de una empresa<br/><br/><mark class="highlight-teal"><strong>b) Un documento estratégico que describe la estructura, objetivos y proyecciones de una empresa<br/><br/></strong></mark>c) Un informe financiero anual<br/>d) Un listado de empleados<br/>e) Un plan de marketing<br/></li></ol><ol type="1" id="1b5c1017-243e-80bf-a28e-d8222624808f" class="numbered-list" start="5"><li><strong>¿Cuál es el principio más importante del brainstorming?<br/><br/></strong>a) Criticar las ideas al principio<br/>b) Seleccionar solo las ideas útiles al instante<br/><br/><mark class="highlight-teal"><strong>c) Anotar todas las ideas, sin descartarlas<br/><br/></strong></mark>d) Usar solo ideas lógicas<br/>e) Seguir un orden estricto<br/></li></ol><ol type="1" id="1b5c1017-243e-80ef-ad38-fd9c042334c9" class="numbered-list" start="6"><li><strong>¿Qué caracteriza a una buena elección de nombre de una empresa?<br/><br/></strong>a) Debe ser largo<br/><br/><mark class="highlight-teal"><strong>b) Debe guardar relación con el producto comercializado<br/><br/></strong></mark>c) Debe incluir números<br/>d) No debe llamar mucho la atención<br/>e) a, b, c y d son correctas<br/>g) Debe ser difícil de recordar<br/>h) Ninguna es correcta<br/></li></ol><ol type="1" id="1b5c1017-243e-8022-9e94-e5a9180235b6" class="numbered-list" start="7"><li><strong>¿Cuál de los siguientes NO es un buen criterio para el diseño de un logotipo?<br/><br/></strong>a) Relación con el producto<br/>b) Ser sencillo y fácil de recordar<br/>c) Ser versátil para diferentes formatos<br/><br/><mark class="highlight-teal"><strong>d) Tener una apariencia compleja y detallada<br/><br/></strong></mark>e) Trasladar sensaciones acordes a la imagen corporativa</li></ol><ol type="1" id="1b5c1017-243e-8091-bb32-e5b60b91d798" class="numbered-list" start="8"><li><strong>¿Qué factor es relevante al elegir la ubicación de una empresa?</strong><br/><br/><mark class="highlight-teal"><strong>a) La ubicación de los competidores<br/><br/></strong></mark>b) El tamaño del equipo de trabajo<br/>c) La tipografía del logotipo<br/>d) El horario de trabajo de la empresa<br/>e) El color de los productos<br/></li></ol><ol type="1" id="1b5c1017-243e-8035-9b59-ca97a01d8222" class="numbered-list" start="9"><li><strong>¿Qué importancia tiene la ubicación de un negocio online?<br/><br/></strong>a) Es más importante que la calidad del producto<br/>b) Es irrelevante en comparación con la de un negocio físico<br/>c) Depende de la cercanía al cliente<br/>d) Es importante solo para negocios locales etermina el éxito o fracaso del negocio<br/><br/><mark class="highlight-teal"><strong>e) Determina el éxito o fracaso del negocio</strong></mark></li></ol><ol type="1" id="1b5c1017-243e-8001-b8e7-f1fc50336778" class="numbered-list" start="10"><li><strong>¿Cuál de las siguientes NO es una técnica común para generar ideas de negocio?<br/><br/></strong>a) Brainstorming<br/>b) Identificar una oportunidad de negocio<br/>c) Renovar algún aspecto del propio negocio<br/>d) Desarrollar una afición personal<br/><br/><mark class="highlight-teal"><strong>e) Evitar pensar en nuevas ideas</strong></mark></li></ol><ol type="1" id="1b5c1017-243e-80bf-961e-fe4935fbce0c" class="numbered-list" start="11"><li><strong>¿Qué característica NO debe tener un nombre de empresa?<br/><br/></strong>a) Fácil de pronunciar<br/>b) Difícil de recordar<br/>c) Fácil de escribir<br/>d) Relación con el producto<br/><br/><mark class="highlight-teal"><strong>e) Capacidad de captar atención</strong></mark></li></ol><ol type="1" id="1b5c1017-243e-803d-b278-e8411127191a" class="numbered-list" start="12"><li><strong>¿Qué relación debe tener el logotipo con el producto?<br/><br/></strong>a) Ninguna<br/>b) Debe ser complejo y detallado<br/><br/><mark class="highlight-teal"><strong>c) Debe ser acorde a la imagen corporativa<br/><br/></strong></mark>d) No debe captar la atención<br/>e) No importa su apariencia<br/></li></ol><ol type="1" id="1b5c1017-243e-80ff-bed1-fb4406f0daba" class="numbered-list" start="13"><li><strong>¿Qué factor puede influir en la decisión de compra de un cliente dentro de un negocio físico?</strong><br/><br/><mark class="highlight-teal"><strong>a) La decoración interior del local<br/><br/></strong></mark>b) La cantidad de empleados<br/>c) El horario de apertura<br/>d) La música de fondo<br/>e) La presencia de una página web<br/></li></ol><ol type="1" id="1b5c1017-243e-8016-91b1-d28f20c797d4" class="numbered-list" start="14"><li><strong>¿Cuál es un criterio esencial para el diseño de un espacio físico empresarial?<br/><br/></strong>a) La cantidad de luces en el local<br/><br/><mark class="highlight-teal"><strong>b) La simplicidad y funcionalidad del diseño<br/><br/></strong></mark>c) La complejidad del mobiliario<br/>d) La cantidad de objetos decorativos<br/>e) La dificultad de realizar modificaciones<br/></li></ol><ol type="1" id="1b5c1017-243e-80c8-8541-e9bad8fbf88e" class="numbered-list" start="15"><li><strong>¿Qué significa un estilo rompedor en la elección de un nombre de empresa?<br/><br/></strong>a) Seguir las normas tradicionales de marketing<br/><br/><mark class="highlight-teal"><strong>b) Elegir un nombre que rompa con lo convencional<br/><br/></strong></mark>c) Usar un nombre relacionado con la mitología<br/>d) Evitar captar la atención<br/>e) Utilizar solo nombres en inglés<br/></li></ol><p id="1b5c1017-243e-80a7-a429-c04aff36a049" class="">
+</p><hr id="1b5c1017-243e-8088-be14-e35afdcc0b97"/><p id="1b5c1017-243e-809c-aded-f2a096583082" class="">
+</p><h1 id="1b5c1017-243e-8066-bd8e-ddc2f10d34ce" class=""><mark class="highlight-red">SEGUNDA EVALUACIÓN TEMAS 4,5 y 6</mark></h1><ol type="1" id="1b5c1017-243e-808a-a4e0-ed3bd1ff5650" class="numbered-list" start="1"><li><strong>¿Cuál es el principal objectivo del marketing?<br/><br/></strong>a) Vender productos de cualquier manera.<br/>b) Generar la máxima rentabilidad sin importar el cliente.<br/><br/><mark class="highlight-teal"><strong>c) Identificar necesidades del público y satisfacerlas eficientemente.<br/><br/></strong></mark>d) Publicitarse más que la competencia.<br/>e) Ofrecer descuentos constantes para atraer clientes.<br/></li></ol><ol type="1" id="1b5c1017-243e-8026-bef0-ecdea875bae9" class="numbered-list" start="2"><li><strong>¿Cuáles son los elementos clave del marketing mix (4P)?<br/><br/></strong>a) Producto, precio, promoción y publicidad<br/><br/><mark class="highlight-teal"><strong>b) Producto, precio, promoción y distribución.<br/><br/></strong></mark>c) Producto, publicidad, coste y cliente.<br/>d) Publicidad, promoción, conveniencia y precio.<br/>e) Cliente, coste, conveniencia y comunicación<br/></li></ol><ol type="1" id="1b5c1017-243e-8059-91b7-d65a5757d186" class="numbered-list" start="3"><li><strong>¿Cuál es la diferencia principal entre el marketing 4P y el marketing 4C?</strong><br/><br/><mark class="highlight-teal"><strong>a) El marketing 4P está enfocado en la empresa y el marketing 4C en el cliente.<br/><br/></strong></mark>b) El marketing 4C utiliza redes sociales y el marketing 4P no.<br/>c) El marketing 4P es más caro que el marketing 4C.<br/>d) El marketing 4C solo se aplica a empresas tecnológicas.<br/>e) El marketing 4P incluye el marketing digital y el 4C no.<br/></li></ol><ol type="1" id="1b5c1017-243e-805c-96d0-eb688db7fc45" class="numbered-list" start="4"><li><strong>¿Qué busca el marketing de contenidos?</strong><br/><br/><mark class="highlight-teal"><strong>a) Fidelizar clientes mediante contenidos de valor.<br/><br/></strong></mark>b) Enviar publicidad masiva sin segmentación.<br/>c) Realizar promociones agresivas.<br/>d) Reducir los costos de producción de anuncios.<br/>e) Sustituir el marketing relacional.<br/></li></ol><ol type="1" id="1b5c1017-243e-8039-b037-fd92e2981830" class="numbered-list" start="5"><li><strong>¿Cuál de las siguientes afirmaciones es correcta sobre el marketing de afiliación?</strong><br/><br/><mark class="highlight-teal"><strong>a) Es un tipo de marketing que paga por acciones concretas, como registros o clics.<br/><br/></strong></mark>b) Es lo mismo que el marketing relacional.<br/>c) Se basa en la venta de productos físicos únicamente.<br/>d) Solo pueden usarlo grandes empresas.<br/>e) No permite la participación de personas externas a la empresa.<br/></li></ol><ol type="1" id="1b5c1017-243e-806b-aef1-fe2da95fd85b" class="numbered-list" start="6"><li><strong>¿Qué técnica utiliza el marketing sensorial?<br/><br/></strong>a) Estrategias para competir con otras empresas.<br/><br/><mark class="highlight-teal"><strong>b) Estímulos que generan experiencias placenteras en los sentidos.<br/><br/></strong></mark>c) Marketing basado en redes sociales.<br/>d) Métodos de reducción de costos publicitarios.<br/>e) Publicidad tradicional en televisión y radio.<br/></li></ol><ol type="1" id="1b5c1017-243e-80b9-a9bc-f51efe4eb52d" class="numbered-list" start="7"><li><strong>¿Cuál de los siguientes es un ejemplo de marketing auditivo?<br/><br/></strong>a) El aroma de una tienda de ropa.<br/>b) La textura de los envases de un producto.<br/><br/><mark class="highlight-teal"><strong>c) El sonido característico del motor de Harley Davidson.<br/><br/></strong></mark>d) Los anuncios en redes sociales.<br/>e) La visualización de un logotipo.<br/></li></ol><ol type="1" id="1b5c1017-243e-80d8-aabb-dab251c2767c" class="numbered-list" start="8"><li><strong>¿Cuál es la función principal de la gestión de los RRHH en una empresa?<br/><br/></strong>a) Administrar la contabilidad y los presupuestos.<br/>b) Dirigir el marketing de la compañía.<br/><br/><mark class="highlight-teal"><strong>c) Seleccionar, contratar, formar y gestionar el talento humano.<br/><br/></strong></mark>d) Crear campañas publicitarias.<br/>e) Mejorar el diseño de los productos.<br/></li></ol><ol type="1" id="1b5c1017-243e-80d2-9cbf-eef64c41a2a5" class="numbered-list" start="9"><li><strong>¿Qué es el plan finaciero de una empresa?<br/><br/></strong>a) Un documento que solo indica los beneficios esperados.<br/>b) Un informe anual de gastos e ingresos.<br/><br/><mark class="highlight-teal"><strong>c) Un análisis de las necesidades y los recursos financieros para cubrirlas.<br/><br/></strong></mark>d) Un listado de préstamos solicitados por la empresa.<br/>e) Un informe de la situación económica global.<br/></li></ol><ol type="1" id="1b5c1017-243e-800e-9169-c865c833c178" class="numbered-list" start="10"><li><strong>¿Cuál de las siguientes opciones NO es una fuente de financiación propia?<br/><br/></strong>a) Ampliaciones de capital.<br/>b) Beneficios no repartidos.<br/><br/><mark class="highlight-teal"><strong>c) Préstamos bancarios.<br/><br/></strong></mark>d) Subvenciones.<br/>e) La rentabilidad de la empresa en el largo plazo.<br/>f) La capacidad de una empresa para continuar su actividad en el corto plazo.<br/>g) El porcentaje de beneficios que se reinvierte en la empresa.<br/>h) El valor de los activos fijos de una empresa.<br/>i) La diferencia entre los ingresos y los gastos de un periodo determinado.Aportaciones de los socios<br/></li></ol><ol type="1" id="1b5c1017-243e-80d2-a363-c58930c9d540" class="numbered-list" start="11"><li><strong>¿Qué es un Business Angel?</strong><br/><br/><mark class="highlight-teal"><strong>a) Un inversor que aporta capital y conocimientos a start-ups.<br/><br/></strong></mark>b) Una entidad bancaria especializada en empresas tecnológicas.<br/>c) Un tipo de subvención gubernamental.<br/>d) Un préstamo sin intereses para nuevos emprendedores.<br/>e) Una estrategia de marketing para atraer inversores.<br/></li></ol><ol type="1" id="1b5c1017-243e-80b1-84a3-d0684d2a6141" class="numbered-list" start="12"><li><strong>¿En qué consiste el crowdfunding?</strong><br/><br/><mark class="highlight-teal"><strong>a) Es un sistema de financiación colectiva a través de plataformas en línea.</strong></mark><strong><br/><br/></strong>b) Es un crédito bancario a largo plazo para empresas emergentes.<br/>c) Es un sistema de microcréditos otorgados por el gobierno.<br/>d) Es una estrategia de reducción de costes empresariales.<br/>e) Es un método exclusivo para grandes empresas.<br/></li></ol><ol type="1" id="1b5c1017-243e-80f1-886a-e1bd92959e0f" class="numbered-list" start="13"><li><strong>¿Cuál de las siguintes afirmaciones sobre el capital social es INCORRECTA?<br/><br/></strong>a) Puede ser aportado en dinero o bienes.<br/>b) Se utiliza para determinar el porcentaje de propiedad de los socios.<br/>c) Su modificación debe inscribirse en el Registro Mercantil.<br/><br/><mark class="highlight-teal"><strong>d) Solo puede aumentar, nunca disminuir.<br/><br/></strong></mark>e) Puede aumentar mediante ampliaciones de capital</li></ol><ol type="1" id="1b5c1017-243e-80c5-8664-ce05e0c2b6fa" class="numbered-list" start="14"><li><strong>¿Cuál es la diferencia principal entre un préstamo y un crédito?<br/><br/></strong>a) Un préstamo tiene intereses más bajos que un crédito.<br/>b) Un crédito se devuelve en cuotas fijas mensuales.<br/><br/><mark class="highlight-teal"><strong>c) En un préstamo, se pagan intereses solo por el dinero utilizado.<br/><br/></strong></mark>d) En un crédito, la amortización es obligatoria en un plazo determinado.<br/>e) No hay diferencia, ambos términos significan lo mismo.<br/></li></ol><ol type="1" id="1b5c1017-243e-80aa-9cea-d90002cee5fa" class="numbered-list" start="15"><li><strong>¿Cuál de las siguientes opciones describe el renting?<br/><br/></strong>a) Un tipo de leasing con opción de compra.<br/><br/><mark class="highlight-teal"><strong>b) Un alquiler que incluye gastos de mantenimiento.<br/><br/></strong></mark>c) Un crédito bancario destinado a la compra de equipos.<br/>d) Un préstamo a largo plazo con garantía hipotecaria.<br/>e) Un plan de ahorro para la renovación de activos.<br/></li></ol><ol type="1" id="1b5c1017-243e-8017-912d-c00db32193e6" class="numbered-list" start="16"><li><strong>¿Qué tipo de financiación se considera ajena?<br/><br/></strong>a) Aportaciones de los socios.<br/>b) Beneficios retenidos.<br/><br/><mark class="highlight-teal"><strong>c) Créditos bancarios.<br/><br/></strong></mark>d) Subvenciones.<br/>e) Concursos para emprendedores<br/></li></ol><ol type="1" id="1b5c1017-243e-801b-993b-fc4e0fce22cb" class="numbered-list" start="17"><li><strong>¿Cuál de las siguintes afirmaciones describe mejor el concepto de umbral de rentabilidad o punto muerto?<br/><br/></strong>a) Es el nivel de ingresos netos que garantiza la máxima rentabilidad de la empresa.<br/><br/><mark class="highlight-teal"><strong>b) Representa el nivel mínimo de ventas necesario para cubrir todos los costes y empezar a obtener beneficios.<br/><br/></strong></mark>c) Es el beneficio neto de la empresa antes de impuestos y amortizaciones.<br/>d) Se refiere al capital mínimo necesario para iniciar un negocio.<br/>e) Es el porcentaje de ventas que corresponde a los costes fijos.<br/></li></ol><ol type="1" id="1b5c1017-243e-8044-83a5-f0161f0bec4e" class="numbered-list" start="18"><li><strong>¿Cuál de las siguinetes opciones corresponde a la fórmula para calcular el punto muerto o umbral de rentabilidad?<br/><br/></strong>a) Punto muerto = Ingresos Totales - Costes Variables<br/>b) Punto muerto = Activo Corriente - Pasivo Corriente<br/><br/><mark class="highlight-teal"><strong>c) Punto muerto = Costes Fijos / (Precio Unitario - Costes Medios Unitarios)<br/><br/></strong></mark>d) Punto muerto = Costes Variables / Costes Fijos<br/>e) Punto muerto = Ingresos Totales / Número de Ventas<br/></li></ol><ol type="1" id="1b5c1017-243e-80cd-b16e-e91aec5c11c1" class="numbered-list" start="19"><li><strong>¿Qué diferencia hay entre quibra y susoensión de pagos?</strong><br/><br/><mark class="highlight-teal"><strong>a) La quiebra ocurre cuando la empresa es insolvente, mientras que la suspensión de pagos sucede cuando tiene activos pero no liquidez.</strong></mark><strong><br/><br/></strong>b) La suspensión de pagos es un sinónimo de quiebra.<br/>C) La quiebra se solicita voluntariamente, mientras que la suspensión de pagos la imponen los acreedores.<br/>d) La suspensión de pagos significa que la empresa no tiene deudas pendientes.<br/>e) La quiebra solo afecta a las grandes empresas, mientras que la suspensión de pagos afecta a pymes.<br/></li></ol><ol type="1" id="1b5c1017-243e-80af-afd7-cb576a56c583" class="numbered-list" start="20"><li><strong>¿Qué mide el fondo de maniobra en una empresa?<br/><br/></strong>a) La rentabilidad de la empresa en el largo plazo.<br/><br/><mark class="highlight-teal"><strong>b) La capacidad de una empresa para continuar su actividad en el corto plazo.<br/><br/></strong></mark>c) El porcentaje de beneficios que se reinvierte en la empresa.<br/>d) El valor de los activos fijos de una empresa.<br/>e) La diferencia entre los ingresos y los gastos de un periodo determinado.<br/></li></ol></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
